@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/bgt_blue"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:translationZ="60dp"
+    tools:ignore="UseCompoundDrawables"
+    tools:viewBindingIgnore="true">
+
+    <LinearLayout
+        android:id="@+id/labeled"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/fav_linear_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        tools:ignore="InvalidId">
+
+        <TextView
+            android:id="@+id/fav_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="name"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/fav_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="film rate"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="https://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:translationZ="100dp"
+
+        app:cardBackgroundColor="@color/my_color1"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="4dp"
+
+        card_view:cardUseCompatPadding="false">
+
+        <ImageView
+            android:id="@+id/fav_img"
+            android:layout_width="100dp"
+            android:layout_height="175dp"
+            android:background="@color/my_color1"
+            android:contentDescription="description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fourth"
+            tools:ignore="RtlSymmetry" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
